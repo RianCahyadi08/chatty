@@ -1,4 +1,4 @@
-import 'package:chatty/homepage.dart';
+import 'package:chatty/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
