@@ -1,12 +1,13 @@
 import 'package:chatty/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: blueColor,
-      body: SafeArea(
+      body: SingleChildScrollView(
           child: Center(
         child: Column(
           children: [
@@ -115,6 +116,138 @@ class HomePage extends StatelessWidget {
                         'Now',
                         style: subtitleTextStyle,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Text(
+                    'Groups',
+                    style: titleTextStyle,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/group1.png',
+                        height: 55,
+                        width: 55,
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Jakarta',
+                            style: titleTextStyle,
+                          ),
+                          Text(
+                            'Lorem ipsum dolor sit amet',
+                            style:
+                                subtitleTextStyle.copyWith(color: blackColor),
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      Text(
+                        '7.3',
+                        style: subtitleTextStyle,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/group2.png',
+                        height: 55,
+                        width: 55,
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Jakarta',
+                            style: titleTextStyle,
+                          ),
+                          Text(
+                            'Lorem ipsum dolor sit amet',
+                            style:
+                                subtitleTextStyle.copyWith(color: blackColor),
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      Text(
+                        '7.3',
+                        style: subtitleTextStyle,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/group3.png',
+                        height: 55,
+                        width: 55,
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Jakarta',
+                            style: titleTextStyle,
+                          ),
+                          Text(
+                            'Lorem ipsum dolor sit amet',
+                            style:
+                                subtitleTextStyle.copyWith(color: blackColor),
+                          ),
+                        ],
+                      ),
+                      Spacer(),
+                      Text(
+                        '7.3',
+                        style: subtitleTextStyle,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                              color: greenColor,
+                              borderRadius: BorderRadius.vertical(
+                                  top: Radius.circular(30),
+                                  bottom: Radius.circular(30))),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.add,
+                              color: whiteColor,
+                            ),
+                            onPressed: () => null,
+                          )),
                     ],
                   )
                 ],
